@@ -94,6 +94,15 @@ public class MaximumContiguousSubsequence {
     }
 
     private static int max3(int maxLeftSum, int maxRightSum, int i) {
+        if(maxLeftSum > maxRightSum && maxLeftSum > i){
+            return maxLeftSum;
+        }
+        if(maxRightSum > maxLeftSum && maxRightSum > i){
+            return maxRightSum;
+        }
+        if(i > maxLeftSum && i > maxRightSum){
+            return i;
+        }
         return 0;
     }
 

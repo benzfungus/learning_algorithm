@@ -20,11 +20,11 @@ public class BinarySearch {
 
         while (low < high) {
             int mid = (low + high) / 2;
-            if (a[mid].compareTo(x) < 0){
+            if (a[mid].compareTo(x) < 0) {
                 low = mid + 1;
-            }else if(a[mid].compareTo(x) > 0){
+            } else if (a[mid].compareTo(x) > 0) {
                 high = mid - 1;
-            }else{
+            } else {
                 return mid;
             }
         }
